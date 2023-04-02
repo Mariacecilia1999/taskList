@@ -24,7 +24,12 @@ const addTask = (e) =>{
    let span = document.createElement('span')
    li.innerHTML += `${inputAddTask}`
    span.classList.add('delete')
+   span.style.width='18px'
+   span.innerHTML= `<img src='./img/deleteImg.png' width='14px'/>`
    li.appendChild(span)
+
+   let deleteTask = document.querySelectorAll('.delete')
+   console.log(deleteTask)
 
 }
 
