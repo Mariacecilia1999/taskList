@@ -23,9 +23,19 @@ const addTask = (e) =>{
    ul.appendChild(li)
    let span = document.createElement('span')
    let taskComplete = document.createElement('span')
+   taskComplete.classList.add('taskComplete')
    taskComplete.innerHTML= `<img src='./img/check.png' width='14px'/>`
    li.appendChild(taskComplete)
    li.innerHTML += `${inputAddTask}`
+
+   let classComplete = document.querySelectorAll('.taskComplete')
+   classComplete.forEach(complete =>{
+      complete.addEventListener('click',function(){
+         console.log('complete')
+      })
+   })
+
+
    li.classList.add('liStyle')
    span.classList.add('delete')
    span.style.width='18px'
