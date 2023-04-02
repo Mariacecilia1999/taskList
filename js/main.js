@@ -22,6 +22,9 @@ const addTask = (e) =>{
    let li = document.createElement('li')
    ul.appendChild(li)
    let span = document.createElement('span')
+   let taskComplete = document.createElement('span')
+   taskComplete.innerHTML= `<img src='./img/check.png' width='14px'/>`
+   li.appendChild(taskComplete)
    li.innerHTML += `${inputAddTask}`
    li.classList.add('liStyle')
    span.classList.add('delete')

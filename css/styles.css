@@ -22,3 +22,8 @@
    display: flex;
    justify-content: space-between;
 }
+
+input, input:focus{
+   border:none;
+   border-bottom: 1px pink solid;
+}
