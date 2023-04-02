@@ -30,7 +30,7 @@ const addTask = (e) =>{
    let deleteTaskClass = document.querySelectorAll('.delete')
    deleteTaskClass.forEach(deleteTask => {
       deleteTask.addEventListener('click', function(){
-         console.log(deleteTask.parentElement)
+         deleteTask.parentElement.remove()
       })
    })
 }
