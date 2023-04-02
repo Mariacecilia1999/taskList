@@ -6,3 +6,16 @@
 // VER TAREAS: debe listar todas las tareas hasta el momento
 // SALIR: debe terminar la ejecución del programa
 // El programa debe mostrar el menú de opciones, y permitir ingresar una opción. Si la opción ingresada es incorrecta, debe mostrar nuevamente el menú. Si se elige SALIR, debe terminar el programa. Si se elige alguna de las otras opciones, debe realizar las acciones correspondientes, y una vez terminada, volver al menú de opciones.
+
+
+//List add task
+//Capture input 
+//Capture buttom +
+
+const addTask = (e) =>{
+   e.preventDefault()
+   alert('a')
+}
+
+document.querySelector('.ButtomAddTask').addEventListener('click', addTask)
+console.log(document.querySelector('.ButtomAddTask'))
