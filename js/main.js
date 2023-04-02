@@ -17,6 +17,12 @@ const addTask = (e) =>{
    console.log('Added task')
    let inputAddTask = document.querySelector('.InputAddTask').value
    console.log(inputAddTask)
+   let ul = document.querySelector('.UlListTask')
+   console.log(ul)
+   let li = document.createElement('li')
+   ul.appendChild(li)
+   li.innerText += inputAddTask
+
 }
 
 document.querySelector('.ButtomAddTask').addEventListener('click', addTask)
