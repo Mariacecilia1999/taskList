@@ -1,0 +1,44 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+header{
+   display: flex;
+   flex-direction: column;
+   background-color: pink;
+   width: 100%;
+   padding: 30px 0px 0px;
+}
+header h1{
+   padding-bottom: 20px;
+   color: white;
+   padding-left: 8px;
+}
+header div{
+   border-top: 3px solid salmon;
+   border-bottom: 3px solid salmon;
+}
+header nav{
+   display: flex;
+   justify-content: space-evenly;
+   margin: 20px;
+}
+
+header nav ul{
+   width: 30%;
+   display: flex;
+   justify-content: space-between;
+   list-style: none;
+}
+header nav ul li:hover{
+   transition: 1s;
+   transform: scale(1.5);
+}
+
+header nav ul a{
+   text-decoration: none;
+   color: white;
+   font-size: 22px;
+}
+
