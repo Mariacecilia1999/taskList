@@ -27,10 +27,12 @@ const addTask = (e) =>{
    span.style.width='18px'
    span.innerHTML= `<img src='./img/deleteImg.png' width='14px'/>`
    li.appendChild(span)
-
-   let deleteTask = document.querySelectorAll('.delete')
-   console.log(deleteTask)
-
+   let deleteTaskClass = document.querySelectorAll('.delete')
+   deleteTaskClass.forEach(deleteTask => {
+      deleteTask.addEventListener('click', function(){
+         console.log(deleteTask)
+      })
+   })
 }
 
 document.querySelector('.ButtomAddTask').addEventListener('click', addTask)
