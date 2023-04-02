@@ -21,7 +21,10 @@ const addTask = (e) =>{
    console.log(ul)
    let li = document.createElement('li')
    ul.appendChild(li)
-   li.innerText += inputAddTask
+   let span = document.createElement('span')
+   li.innerHTML += `${inputAddTask}`
+   span.classList.add('delete')
+   li.appendChild(span)
 
 }
 
