@@ -14,7 +14,9 @@
 
 const addTask = (e) =>{
    e.preventDefault()
-   alert('a')
+   console.log('Added task')
+   let inputAddTask = document.querySelector('.InputAddTask').value
+   console.log(inputAddTask)
 }
 
 document.querySelector('.ButtomAddTask').addEventListener('click', addTask)
