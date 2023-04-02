@@ -28,10 +28,15 @@ const addTask = (e) =>{
    li.appendChild(taskComplete)
    li.innerHTML += `${inputAddTask}`
 
+   let arrayTask = []
+
    let classComplete = document.querySelectorAll('.taskComplete')
    classComplete.forEach(complete =>{
       complete.addEventListener('click',function(){
          console.log('complete')
+         arrayTask.push(inputAddTask)
+         complete.parentElement.remove()
+         console.log(arrayTask)
       })
    })
 
