@@ -23,6 +23,7 @@ const addTask = (e) =>{
    ul.appendChild(li)
    let span = document.createElement('span')
    li.innerHTML += `${inputAddTask}`
+   li.classList.add('liStyle')
    span.classList.add('delete')
    span.style.width='18px'
    span.innerHTML= `<img src='./img/deleteImg.png' width='14px'/>`

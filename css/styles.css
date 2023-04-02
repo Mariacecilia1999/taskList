@@ -17,3 +17,8 @@
    width: 100%;
    display: flex;
 }
+
+.liStyle{
+   display: flex;
+   justify-content: space-between;
+}
